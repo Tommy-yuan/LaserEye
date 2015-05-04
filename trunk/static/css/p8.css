@@ -1,0 +1,116 @@
+#slide8 .g-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+.shareSuccess{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	z-index: 10;
+	display: none;
+}
+
+.shareSuccess .blackBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	background-size: 100% 100%;
+}
+
+.shareSuccess .shareSuccessBg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	/*background: url(../img/shareSuccessBg-fail.png) no-repeat center center;
+	background-size: contain;
+	padding-bottom: 160.3125%;*/
+}
+
+.shareSuccessImg{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.shareSuccess .shareSuccessBg .wrapper{
+	position: relative;
+	width: 100%;
+	/*height: 100%;*/
+	padding-bottom: 160.3125%;
+}
+
+.shareSuccess-close{
+	position: absolute;
+  right: 11%;
+  z-index: 10;
+  text-align: left;
+  color: white;
+  top: 6.5%;
+  font-size: 1.5em;
+}
+
+.shareSuccess-score{
+	position: absolute;
+  right: 29%;
+  color: white;
+  top: 55.5%;
+  font-size: 2.5em;
+
+}
+
+.shareSuccess-input{
+	position: absolute;
+	width: 60%;
+	right: 9%;
+  	  top: 69.3%;
+  height: 40px;
+}
+
+.shareSuccess-input input{
+	-webkit-appearance:none;
+	appearance:none;
+	  width: 100%;
+  height: 100%;
+  /* height: 32px; */
+  border: 0;
+  background: url(../img/phoneInput.png) no-repeat center center;
+  background-size: 100% 100%;
+  /* color: white; */
+  text-align: center;
+  display: inline-block;
+}
+
+.shareSuccess-leaderboard{
+	position: absolute;
+	width: 38.28125%;
+	top: 77.29%;
+	left: 30.859375%;
+	background: url(../img/leaderboardBtn.png) no-repeat center center;
+	background-size: contain;
+	padding-bottom: 8.28125%
+}
+
+.shareSuccess-again{
+	position: absolute;
+	width: 38.28125%;
+	top: 84.68%;
+	left: 30.859375%;
+	background: url(../img/challengeAgain.png) no-repeat center center;
+	background-size: contain;
+	padding-bottom: 8.28125%
+}
+
+#phoneSubmit{
+	  /*width: 16.75%;*/
+	  width: 40px;
+  display: inline-block;
+}
+
+
+

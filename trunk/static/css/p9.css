@@ -1,0 +1,209 @@
+#slide9 .g-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#slide9 .g-bd{
+	background:url(../img/p9-bg.png) no-repeat;
+	background-size:100% 100%;
+}
+
+#slide9 .top-desc{
+	position:absolute;
+	right:0;
+	top:0;
+	color:#FFF;
+	text-shadow:3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+	font-size:1.9375%;
+	margin-top: 5.15625%;
+	right: 3.90625%;
+	font-size:2.25em;
+	z-index: 1;
+} 
+
+#slide9 .ranking{
+	color:#FFF;
+	margin-top:7.8125%;
+	position:relative;
+	margin-top:-1.785%;
+}
+
+#slide9 .ranking .h2,#slide9 .ranking .h1{
+	font-style:italic;
+	display:inline-block;
+	font-size:2.5625em;
+	vertical-align:bottom;
+}
+#slide9 .ranking .h2{
+	position:absolute;
+	right:9.375%;
+	bottom:0px;
+	
+}
+#slide9 .ranking .h1{
+	font-size:4.0625em;
+	line-height:1.2em;
+	margin-left:6.25%;
+	text-shadow:3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+}
+#slide9 .ranking div{
+	display:inline-block;
+}
+#slide9 .ranking .face{
+	background:url(../img/p9-temp-face.png) no-repeat;
+	background-size:100% 100%;
+	width:14.375%;
+	padding-bottom:14.375%;
+	vertical-align:bottom;
+	margin-left:1.5625%;
+	box-shadow:0px 0px 20px #e60012;
+	border-radius:50%;
+	position: relative;
+}
+#slide9 .ranking .face img{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+#slide9 .ranking .name{
+	font-size:1.25em;
+	line-height:3em;
+	width:27.34375%;
+	margin-left:1.5625%;
+}
+#slide9 .ranking .right-last{
+	background: url(../img/p9-right-last.png) no-repeat;
+    background-size: 100% 100%;
+    width: 3.90625%;
+    padding-bottom: 6.40625%;
+    vertical-align: bottom;
+    position: absolute;
+    right: 4.6875%;
+    bottom: 0px;
+}
+#slide9 .ranking-btm{
+	background:url(../img/p9-ranking-btm.png) repeat-x;
+	background-size:100% 100%;
+	width:100%; 
+	padding-bottom:11.09375%;
+	margin-top:-4%;
+	
+}
+#slide9 .my-ranking{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+	padding-bottom:39.0625%;
+}
+#slide9 .my-rank-btm{
+	background:url(../img/p9-myrank-btm-bg.png) no-repeat;
+	background-size:100% 100%;
+	width:100%;
+	padding-bottom:23.4375%;
+	position:absolute;
+	bottom:0px;
+}
+#slide9 .fight-again{
+	position:absolute;
+	background:url(../img/p9-btn-fight-again.png) no-repeat;
+	background-size:100% 100%;
+	width:37.1875%;
+	padding-bottom:7.96875%;
+	bottom:15.33333333333333%;
+	left:11.71875%;
+	cursor:pointer;
+}
+#slide9 .share-now{
+	position:absolute;
+	background:url(../img/p9-btn-share-now.png) no-repeat;
+	background-size:100% 100%;
+	width:37.1875%;
+	padding-bottom:7.96875%;
+	bottom:15.33333333333333%;
+	left:49.53125%;
+	cursor:pointer;
+}
+
+#slide9 .my-rank-info{
+	position:absolute;
+	width:100%;
+	height:53.06122448979592%;
+	color:#FFF;
+}
+#slide9 .my-rank-face{
+	/*background:url(../img/p9-temp-face.png) no-repeat;*/
+	background-size:100% 100%;
+	width:14.375%;
+	/*padding-bottom:14.375%;*/
+	box-shadow:0px 0px 20px #e60012;
+	border-radius:50%;
+	left:11.71875%;
+	position:absolute;
+	bottom:3%;
+}
+#slide9 .my-rank-tit{
+	position:absolute;
+	right:4.375%;
+	font-size:1.6875em;
+	text-shadow:3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+	top:7.8125%;
+}
+
+#slide9 .my-rank-last-tit{
+	background: url(../img/p9-right-last.png) no-repeat;
+    background-size: 100% 100%;
+    width: 3.90625%;
+    padding-bottom: 6.40625%;
+    vertical-align: bottom;
+    position: absolute;
+    right: 4.6875%;
+    bottom: 16%;
+}
+#slide9 .my-rank-num{
+	position:absolute;
+	left:1.5625%;
+	text-shadow:3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+	top:7.8125%;
+	font-size:1.125em;
+	font-style:italic;
+}
+#slide9 .my-rank-score{
+	font-style:italic;
+	display:inline-block;
+	font-size:2.5625em;
+	position:absolute;
+	right:9.375%;
+	bottom: 16%;
+}
+#slide9 .my-rank-name{
+	position:absolute;
+	left:30.46875%;
+	top:60.4%;
+}
+#slide9 .load-more{
+	display: none;
+  position: relative;
+  width: 100%;
+  padding-bottom: 10.15625%;
+  background: url(../img/p9-rank-bg.png);
+}
+#slide9 .load-more .img{
+
+	background:url(../img/p9-load-more.png) no-repeat;
+	background-size:100% 100%;
+	width:20.78125%;
+	height:0px;
+	padding-bottom:5.625%;
+	position:absolute;
+	left:41.40625%;
+	top:26.98412698412698%;
+}
+#slide9 .rankContainer{
+
+  overflow:scroll;
+  height:68%;
+  position:relative;
+  margin-top:7.8125%;
+}

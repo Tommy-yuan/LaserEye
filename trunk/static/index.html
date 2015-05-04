@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>RV</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/idangerous.swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+  	<link rel="stylesheet" href="css/p0.css">
+  	<link rel="stylesheet" href="css/p1.css">
+  	<link rel="stylesheet" href="css/p2.css">
+  	<link rel="stylesheet" href="css/p3.css">
+  	<link rel="stylesheet" href="css/p4.css">
+  	<link rel="stylesheet" href="css/p5.css">
+	<link rel="stylesheet" href="css/p6.css">
+  	<link rel="stylesheet" href="css/p7.css">
+  	<link rel="stylesheet" href="css/p8.css">
+  	<link rel="stylesheet" href="css/p9.css">
+    <link rel="stylesheet" type="text/css" 
+        media="only screen and (device-width:320px) and (device-height:480px)" href="css/iphone4.css"  />
+    <!-- build:js js/jq.min.js -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <!--<script src="js/jpreloader.js"></script>-->
+    <script src="js/idangerous.swiper.js"></script>
+    <script src="js/exif.js"></script>
+    <script src="js/spin.min.js"></script>
+    <script src="js/hammer.js"></script>
+    <script src="js/jquery.hammer.js"></script>
+    <script src="js/ejs_production.js"></script>
+    <script type="text/javascript" src="js/UploadPhoto.js"></script>
+    <script type="text/javascript" src="js/load-image.all.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/p1.js"></script>
+    <script src="js/p2.js"></script>
+    <script src="js/p3.js"></script>
+	<script src="js/p4.js"></script>
+    <script src="js/p5.js"></script>
+    <script src="js/p6.js"></script>
+	<script src="js/p7.js"></script>
+    <script src="js/p8.js"></script>
+    <script src="js/p9.js"></script>
+    <!-- endbuild -->
+  <script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+    
+    <script>
+    // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    // ga('create', 'UA-61908751-2', 'auto');
+    // ga('send', 'pageview');
+  </script>
+</head>
+<body>
+<div class="g-doc">
+    <div class="g-bd">
+      <div id="main-swiper" class="swiper-container">
+			 <div class="swiper-wrapper">
+              <div id="slide0" class="swiper-slide swiper-no-swiping"> 
+                <div class="m-screen m-screen0">
+                    <div class="g-ct f-dn" >
+                      <div class="g-content">
+						<div class="g-bd" >
+							<div class="load">
+								<div class="load-info">
+									<div id="loadProcess" class="load-count">35%</div>
+									<div class="load-tit"></div>
+								</div>
+								<div class="load-product"></div>
+							</div>
+						</div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+			  <script>
+				document.getElementById('loadProcess').innerHTML="10%";
+			  </script>
+			  <div id="slide1" class="swiper-slide swiper-no-swiping"> 
+          <div class="m-screen m-screen0">
+              <div class="g-ct f-dn" >
+                <div class="g-content">
+      						<div class="g-bd">
+      							<div class="layer2 animated"></div>
+      							<div class="logo"></div>
+      							<!-- rirst -->
+      							<div class="left-face animated"></div>
+      							<div class="right-face animated"></div>
+      							
+      							<div class="layer1 animated"></div>
+      							<div class="layer0 animated"></div>
+      							
+      							<div class="begin-fight animated"></div>
+      							<div class="btm-product animated"></div>
+      							<div class="layer3 animated"></div>
+      							
+      							<!-- second -->
+      							<div class="top-tit"></div>
+      							<div class="fight-right animated"></div>
+      							<div class="fight-left animated"></div>
+      					
+      							<!-- third -->
+      							<div class="btm-remind"></div>
+      						</div>
+                  </div>
+                </div>
+            </div>
+          </div>
+			  <div id="slide2" class="swiper-slide"> 
+          <div class="m-screen m-screen0">
+            <div class="g-ct f-dn" >
+                <div class="g-content">
+                  <div class="u-bg">
+                    </div>
+                    <div class="upload_txt">
+                        <img src="img/upload_txt.png" width="100%">
+                    </div>
+                    <div class="uploadProfile" id="uploadProfile">
+                        <img src="img/uploadProfile.png" width="100%">
+                    </div>
+                    <div class="uploadIntro_txt">
+                        <img src="img/uploadIntro_txt.png" width="100%">
+                    </div>
+                    <div class="cameraBtn">
+                        <img src="img/cameraBtn.png" width="100%">
+                        <input type='file' id="uploadImg" class="uploadInput">
+                    </div>
+                    <div class="btnHighlight">
+                        <img src="img/btnHighlight.png" width="100%">
+                    </div>
+                    <div class="bottomLight">
+                        <img src="img/bottomLight.png" width="100%">
+                    </div>
+
+
+                    <div class="adjust_frame">
+                        <img src="img/adjust_frame.png" width="100%">
+                    </div> 
+                    <div class="upload_photo" id="upload_photo">
+                        <img id="upload_img" width="100%">
+
+                    </div>
+
+                    <div class="adjustPage f-dn">
+                        <div class="adjust_txt">
+                            <img src="img/adjust_txt.png" width="100%">
+                        </div>
+                        <div class="adjustIntro_txt">
+                            <img src="img/adjustIntro_txt.png" width="100%">
+                        </div>
+                        <div class="adjustBot">
+                            <img src="img/adjustBot.png" width="100%">
+                        </div>
+                        <div class="adjust_confirm"></div>
+                        <div class="adjust_cancel"></div>
+                    </div>
+                </div>
+            </div>    
+              
+          </div>
+        </div>
+
+
+			  <div id="slide3" class="swiper-slide"> 
+          <div class="m-screen m-screen0">
+              <div class="g-ct f-dn" >
+                <div class="g-content">
+						      <div class="input-bg">
+                  </div>
+                  <div class="uploadS_txt">
+                      <img src="img/uploadS_txt.png" width="100%">
+                  </div>
+                  <div class="input_cicle">
+                      <img src="img/input_cicle.png" width="100%">
+                  </div>
+                  <div class="inputIntro_txt">
+                      <img src="img/inputIntro_txt.png" width="100%">
+                  </div>
+                  <div class="nickName_txt">
+                      <img src="img/nickName_txt.png" width="100%">
+                  </div>
+                  <div class="birthday_txt">
+                      <img src="img/birthday_txt.png" width="100%">
+                  </div>
+                  <div class="input_frame">
+                       <input type="text"  id="input_id"  value="10个字以内(听说酷炫的昵称会让对手只看一眼就被吓晕呢)">
+                  </div>
+                  <div onload="list();">  
+                      <form name="form" id="form">  
+                          <select id="year" name="year" onchange="febday();">  
+                          </select><span>年</span> 
+                          <select name="month" id="month" onchange="febday();">  
+                          </select><span>月</span> 
+                          <select name="day" id="day">  
+                          </select><span>日</span>    
+                      </form>  
+                  </div> 
+                  <div class="testBtn">
+                      <img src="img/testBtn.png" width="100%">
+                      <div class="testEyeValue_txt">
+                          <img src="img/testEyeValue.png" width="100%">
+                      </div>
+                      <div class="testBtn_arrow"> 
+                          <img src="img/testBtn_arrow.png" width="100%">
+                      </div>  
+
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+			  <script>
+				document.getElementById('loadProcess').innerHTML="30%";
+			  </script>
+			  <div id="slide4" class="swiper-slide"> 
+          <div class="m-screen m-screen0">
+            <div class="g-ct f-dn" >
+              <div class="g-content">
+						    <div class="eyeValue-bg">
+                  </div>
+                  <div class="eyeValue_cicle">
+                      <img src="img/eyeValue_cicle.png" width="100%">
+                  </div>
+                  <div class="eyeValue_txt0">
+                      <img src="img/eyeValue_txt0.png" width="100%">
+                  </div>
+                  <div class="eyeValue_txt1">
+                      <img src="img/eyeValue_txt1.png" width="100%">
+                  </div>
+                  <div class="eyeValue_score">
+                      <span class="eyeValue_score0">30</span>
+                      <span class="eyeValue_score1">分</span>
+                  </div>
+                  <div class="duelBtn">
+                      <img src="img/duelBtn.png" width="100%">
+                  </div> 
+              </div>
+            </div>
+        </div>
+      </div>
+			  <!-- <div id="slide5" class="swiper-slide"> 
+                <div class="m-screen m-screen0">
+                    <div class="g-ct f-dn" >
+                      <div class="g-content">
+						<div class="g-bd"></div>
+                      </div>
+                    </div>
+                </div>
+              </div> -->
+			  <div id="slide6" class="swiper-slide"> 
+                <div class="m-screen m-screen0">
+                    <div class="g-ct f-dn" >
+                      <div class="g-content">
+						<div class="g-bd">
+							<div class="load">
+								<div class="load-info">
+									<div class="load-count aroundCenter animated infinite"></div><div class="load-tit"></div>
+								</div>
+								<div class="load-product">
+                  <div class="load-product-div">
+                    <img src="img/loading1.png">
+                  </div>
+								</div>
+							</div>
+							<div class="remind">
+								<p>系统正在根据你的眼值</p>
+								<p>从全国挑选最匹配你的对手与你对决</p>
+							</div>
+						</div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+			  <script>
+				document.getElementById('loadProcess').innerHTML="70%";
+			  </script>
+			  <div id="slide7" class="swiper-slide swiper-no-swiping"> 
+          <div class="m-screen m-screen0">
+            <div class="g-ct f-dn" >
+              <div class="g-content">
+						    <div class="g-bd"></div>
+
+                <div class="game-pk">
+                  <div class="pk-top-name">
+                    me
+                  </div>
+                  <div class="pk-top">
+                    <div class="pk-top-bg">
+                      <img src="img/pk-top.jpg">
+                    </div>
+                    <div class="pk-top-content">
+                      <div class="pk-me">
+                        <div class="pk-headimg">
+                          <img src="img/result-opponent0.jpg">
+                        </div>
+                        <div class="pk-name">
+                          me
+                        </div>
+                      </div>
+                      <div class="pk-opponent">
+                        <div class="pk-headimg">
+                          <img src="img/result-opponent0.jpg">
+                        </div>
+                        <div class="pk-name">
+                          opponent
+                        </div>
+                      </div>
+                      <div class="pk-me-score">
+                        
+                      </div>
+                      <div class="pk-me-newScore">
+                        
+                      </div>
+                      <div class="pk-opponent-score">
+                        
+                      </div>
+                      <div class="pk-opponent-newScore">
+                        
+                      </div>
+                    </div>
+                  </div>
+                  <div class="pk-init-score">
+                    你的眼值起始得分为<span id="pk-init-socre">30</span>分
+                  </div>
+                  <div class="pk-content" id="pk-content">
+                  </div>
+                  <div class="pk-bottom">
+                    <div class="pk-text">
+                      <p><span id="pk-text-success"></span><span id="pk-text-content"></span></p>
+                      <p id="pk-text-score"></p>
+                    </div>
+                    <div class="pk-bottom-btn">
+                      <div class="pk-bottom-bg">
+                        <img src="img/pk-bottom.jpg">
+                      </div>
+                      <div class="pk-bottom-begin"></div>
+                      <div class="pk-bottom-tip">
+                        <img src="img/pk-tip.png">
+                        <div class="pk-tip-close">
+                          <img src="img/pk-tip-close.png">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="game-result">
+                  <div class="game-result-bg">
+                    <div class="result-close">X</div>
+                    <div class="result-me">
+                      <div class="result-headimg">
+                        <div class="whiteBg"></div>
+                        <img src="img/result-opponent0.jpg">
+                      </div>
+                      <div class="result-head-smile animated tada infinite">
+                        <img src="img/img-smile.png">
+                      </div>
+                      <div class="result-head-cry">
+                        <img src="img/img-cry0.png">
+                        <div class="img-cry-div">
+                          <img src="img/img-cry1.png" class="img-cry1">
+                        </div>
+                      </div>
+                      <div class="result-name">
+                        
+                      </div>
+                    </div>
+                    <div class="result-opponent">
+                      <div class="result-headimg">
+                        <div class="whiteBg"></div>
+                        <img src="img/result-opponent0.jpg">
+                      </div>
+                      <div class="result-head-smile animated tada infinite">
+                        <img src="img/img-smile.png">
+                      </div>
+                      <div class="result-head-cry">
+                        <img src="img/img-cry0.png">
+                        <div class="img-cry-div">
+                          <img src="img/img-cry1.png" class="img-cry1">
+                        </div>
+                      </div>
+                      <div class="result-name">
+                        
+                      </div>
+                    </div>
+
+                    <div class="result-score"></div>
+                    <div class="result-text">
+                      <img src="">
+                    </div>
+                    <div class="result-shareBtn"></div>
+                    <div class="result-leadboard"></div>
+                  </div>
+
+                  
+                </div>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+			  <!-- <div id="slide8" class="swiper-slide"> 
+          <div class="m-screen m-screen0">
+            <div class="g-ct f-dn" >
+              <div class="g-content">
+						    <div class="g-bd"></div>
+
+                <div class="sharePage"></div>
+
+              </div>
+            </div>
+          </div>
+        </div> -->
+			<script>
+				document.getElementById('loadProcess').innerHTML="80%";
+			  </script>
+			  <div id="slide9" class="swiper-slide swiper-no-swiping"> 
+                <div class="m-screen m-screen0">
+                    <div class="g-ct f-dn" >
+                      <div class="g-content">
+						<div class="g-bd">
+							<div class="top-desc">以眼对决全国实时排行榜</div>
+              <div class="rankContainer">
+               <!--  <div class="ranking num0">
+  								<span class="h1">1</span>
+  								<div class="face">
+                    <img src="img/p9-temp-face.png" />
+                  </div>
+  								<div class="name">Amanda</div>
+  								<span class="h2">128043</span>
+  								<div class="right-last"></div>
+  							</div>
+  							<div class="ranking-btm"></div>
+							<div class="ranking num1">
+								<span class="h1">2</span>
+								<div class="face">
+                  <img src="img/result-opponent0.jpg" />
+                </div>
+								<div class="name">Amanda</div>
+								<span class="h2">128043</span>
+								<div class="right-last"></div>
+							</div>
+							<div class="ranking-btm"></div>
+							<div class="ranking num2">
+								<span class="h1">3</span>
+								<div class="face">
+                  <img src="img/p9-temp-face.png" />
+                </div>
+								<div class="name">Amanda</div>
+								<span class="h2">128043</span>
+								<div class="right-last"></div>
+							</div>
+							<div class="ranking-btm"></div>
+							<div class="ranking num3">
+								<span class="h1">4</span>
+								<div class="face"></div>
+								<div class="name">Amanda</div>
+								<span class="h2">128043</span>
+								<div class="right-last"></div>
+							</div>
+							<div class="ranking-btm"></div>
+							<div class="ranking num4">
+								<span class="h1">5</span>
+								<div class="face"></div>
+								<div class="name">Amanda</div>
+								<span class="h2">128043</span>
+								<div class="right-last"></div>
+							</div>
+							<div class="ranking-btm"></div>
+
+               <div class="ranking num4">
+								<span class="h1">6</span>
+								<div class="face"></div>
+								<div class="name">Amanda</div>
+								<span class="h2">128043</span>
+								<div class="right-last"></div>
+							</div>
+							<div class="ranking-btm"></div>
+              <div class="ranking num4">
+								<span class="h1">7</span>
+								<div class="face"></div>
+								<div class="name">Amanda</div>
+								<span class="h2">128043</span>
+								<div class="right-last"></div>
+							</div>
+							<div class="ranking-btm"></div>
+               -->
+              </div>
+														
+							<div class="load-more">
+								<div onclick="loadMoreRank()" class="img"></div>
+							</div>
+							
+							<div class="my-ranking">
+								<div class="my-rank-info">
+									<div class="my-rank-num"></div>
+									<div class="my-rank-tit">我的排名</div>
+									<div class="my-rank-face">
+                    <img src="img/p9-temp-face.png" id="my-rank-faceimg">
+                  </div>
+									<div class="my-rank-name"></div>
+									<div class="my-rank-score"></div>
+									<div class="my-rank-last-tit"></div>
+								</div>
+								<div class="my-rank-btm">
+									<div class="fight-again"></div>
+									<div class="share-now"></div>
+								</div>
+							</div>
+						</div>
+						
+                      </div>
+                    </div>
+                </div>
+              </div>
+			</div>	
+		</div>
+    </div>
+
+    <div class="game-share">
+      <div class="share-bg"></div>
+    </div>
+    <div class="shareSuccess">
+      <div class="blackBg"></div>
+      <div class="shareSuccessBg">
+        <img src="img/shareSuccessBg-fail.png" class="shareSuccessImg">
+        <div class="shareSuccess-close">X</div>
+        <div class="shareSuccess-score">
+          <span id="shareSuccess-score">1111</span>
+        </div>
+        <div class="shareSuccess-input">
+          <input type="text" id="phoneText">
+          <img src="img/submitBtn.png" id="phoneSubmit">
+        </div>
+        <div class="shareSuccess-leaderboard">
+        </div>
+        <div class="shareSuccess-again">
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>

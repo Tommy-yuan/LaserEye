@@ -1,0 +1,355 @@
+#slide7 .g-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+#slide7 .g-content .g-bd{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: url(../img/p7-bg.jpg) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.pk-top-name{
+	position: relative;
+	color: #fff;
+	text-align: center;
+	background-color: #222325;
+	padding: 1px 0 1px 0;
+	font-size: 2em;
+}
+
+.pk-top{
+	position: relative;
+	width: 100%;
+}
+
+.pk-top-content{
+	position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.pk-top-content .pk-me{
+	width: 18.75%;
+	  position: absolute;
+  top: 19%;
+  left: 2%;
+}
+
+.pk-top-content .pk-opponent{
+	width: 18.75%;
+	  position: absolute;
+  top: 19%;
+  right: 2%;
+}
+
+.pk-headimg{
+	width: 100%;
+	overflow: hidden;
+	border-style: solid;
+	border-width: 1px;
+	border-color: red;
+}
+
+.pk-headimg img{
+	height: 100%;
+}
+
+.pk-name{
+	position: relative;
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.pk-me-score{
+	position: absolute;
+	color: #fff;
+	font-size: 2.5em;
+  top: 51%;
+  left: 29%;
+    text-shadow: 3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+}
+
+.pk-me-newScore{
+	position: absolute;
+	color: #fff;
+	font-size: 2em;
+  top: 30%;
+  left: 22%;
+  display: none;
+    text-shadow: 3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+}
+
+.pk-opponent-score{
+	position: absolute;
+	color: #fff;
+	font-size: 2.5em;
+  top: 51%;
+  right: 29%;
+    text-shadow: 3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+}
+
+.pk-opponent-newScore{
+	position: absolute;
+	color: #fff;
+	font-size: 2em;
+  top: 30%;
+  right: 22%;
+  display: none;
+    text-shadow: 3px 3px 3px #FF0000,-1px -1px 3px #FF0000;
+}
+
+.pk-init-score{
+    position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 25px;
+	color: white;
+}
+
+.pk-init-score span{
+	color: #f0116f;
+}
+
+.pk-text{
+	position: relative;
+	width: 70%;
+	  left: 15%;
+	text-align: center;
+	color: white;
+	display: none;
+}
+
+#pk-text-success{
+	color: red;
+}
+
+#pk-text-score{
+	color: #f0116f;
+}
+
+.pk-bottom{
+	position: absolute;
+	bottom: 0;
+}
+
+.pk-bottom-btn{
+	position: relative;
+	bottom: 0;
+	width: 100%;
+}
+
+.pk-bottom-begin{
+	  position: absolute;
+  width: 60%;
+  height: 100%;
+  top: 0;
+  left: 20%;
+}
+
+.pk-bottom-tip{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 41.72%;
+}
+
+.pk-tip-close{
+	  position: absolute;
+  width: 7.11%;
+  top: 0;
+  right: 3%;
+}
+
+.pk-content{
+	margin-top: 5px;
+	position: relative;
+	width: 100%;
+	overflow-y:scroll;
+}
+
+.pk-content .pk-begin{
+	width: 100%;
+}
+
+.pk-content .pk-begin .pk-headimg{
+	width: 15.75%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pk-content .pk-me-turn,.pk-content .pk-begin,.pk-content .pk-opponent-turn{
+	margin-bottom: 5px;
+}
+
+.pk-content .pk-me-turn .pk-headimg{
+	width: 15.75%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pk-content .pk-opponent-turn .pk-headimg{
+	width: 15.75%;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+}
+
+.pk-content .pk-opponent-turn .pk-dialog{
+	float: right;
+}
+
+
+.pk-dialog{
+	width: 50%;
+	display: inline-block;
+}
+
+.result-close{
+	position: absolute;
+  right: 11%;
+  z-index: 10;
+  text-align: left;
+  color: white;
+  top: 8.5%;
+  font-size: 2.5em;
+}
+
+.game-result{
+	display: none;
+	  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.game-result-bg{
+	position: absolute;
+	width: 100%;
+	background: url(../img/resultBg.png) no-repeat center center;
+	background-size: contain;
+	padding-bottom: 160.3125%;
+}
+
+.result-opponent,.result-me{
+	  position: absolute;
+  top: 12.28%;
+  width: 23.44%;
+  text-align: center;
+  color: white;
+}
+
+.result-headimg{
+	overflow: hidden;
+	/*background-color: #fff;*/
+	/*opacity: 0.5;*/
+}
+
+.result-headimg img{
+	height: 100%;
+  max-width: none;
+  text-align: center;
+  display: block;
+}
+
+.whiteBg{
+	position: absolute;
+	width: 100%;
+	opacity: 0.5;
+	background-color: #fff;
+}
+
+.result-opponent{
+	right: 18.78%;
+}
+
+.result-me{
+	left: 18.78%;
+}
+
+.result-head-smile,.result-head-cry{
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.result-head-cry{
+	width: 150%;
+  left: -20%;
+}
+
+.result-head-cry div{
+	position: absolute;
+  top: 0;
+  height: 0px;
+  overflow: hidden;
+}
+
+.result-opponent .result-head-smile{
+	display: none;
+}
+
+.result-me .result-head-cry{
+	display: none;
+}
+
+.result-score{
+	position: absolute;
+  top: 34.12%;
+  left: 54%;
+  color: white;
+  font-size: 2em;
+}
+
+.result-text{
+	position: absolute;
+	width: 100%;
+	top: 40.93%;
+}
+
+.result-shareBtn{
+	position: absolute;
+	width: 38.28125%;
+	top: 80.69%;
+  left: 11.859375%;
+	background: url(../img/img-shareBtn.png) no-repeat center center;
+	background-size: contain;
+	padding-bottom: 8.28125%
+}
+
+.result-leadboard{
+	position: absolute;
+	width: 38.28125%;
+	top: 80.69%;
+  right: 11.859375%;
+	background: url(../img/img-leaderboardBtn.png) no-repeat center center;
+	background-size: contain;
+	padding-bottom: 8.28125%
+}
+
+.game-share{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	z-index: 100;
+	display: none;
+}
+
+.share-bg{
+	position: absolute;
+	width: 100%;
+	background: url(../img/img-shareBg.png) no-repeat center center;
+	background-size: contain;
+	padding-bottom: 160.3125%;
+}
+
+
+
+
+

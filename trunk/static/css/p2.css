@@ -1,0 +1,340 @@
+#slide2 .g-content{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.u-bg {
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-image: url("../img/upload_bg.jpg");
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+}
+
+.eyeValue-bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-image: url("../img/eyeValue_bg.jpg");
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+}
+
+.input-bg{
+    position:absolute;
+    left:0;
+    top:0;
+    width: 100%;
+    height:100%;
+    background-image: url("../img/input_bg.jpg");
+    background-size: 100%,100%;
+    background-repeat: no-repeat;
+}
+
+/*upload Page*/
+.upload_txt{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 39.53%;/*253px*/
+    z-index: 1;
+}
+
+.adjust_txt{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 39.53%;/*253px*/
+    z-index: 1;
+}
+
+.uploadProfile{
+    position: absolute;
+    top: 28%;
+    left: 24%;
+    width: 51.09%;/*327px*/
+    z-index: 1;
+}
+
+.adjust_frame{
+    position: absolute;
+    top: 28%;
+    left: 24%;
+    width: 51.09%;/*327px*/
+    z-index: 100;
+}
+
+.upload_photo{
+    position: absolute;
+    top: 29.5%;
+    left: 26.5%;
+    width: 46.25%;/*296px*/
+    z-index: 1;
+    overflow: hidden;
+}
+
+.uploadIntro_txt{
+    position: absolute;
+    top: 62%;
+    left: 11.875%;
+    width: 76.25%;/*488px*/
+    z-index: 1;
+}
+
+.adjustIntro_txt{
+    position: absolute;
+    top: 62%;
+    left: 23.5%;
+    width: 52.97%;/*339px*/
+    z-index: 1;
+}
+
+
+.cameraBtn{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;/*640px*/
+    z-index: 1;
+}
+
+.btnHighlight{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;/*640px*/
+    z-index: 1;
+    display: none;
+}
+
+.bottomLight{
+    position: absolute; 
+    bottom: -12%;
+    left: 0%;
+    width: 100%;
+    z-index: 1;
+    display: none;
+}
+
+.uploadInput{
+    opacity: 0;
+    height:100%;
+    position:absolute;
+    top:0%;
+    width:100%;
+    left:0%;
+}
+
+.adjustBot{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;/*640px*/
+    z-index: 1;
+}
+
+.adjust_confirm{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 18%;
+    height: 8%;
+    z-index: 2;
+}
+
+.adjust_cancel{
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 18%;
+    height: 8%;
+    z-index: 2;
+}
+
+/*Input Page*/
+.input_cicle{
+    position: absolute;
+    top: 15%;
+    left: 24%;
+    width: 51.09%;/*327px*/
+    z-index: 1;
+    overflow: hidden;
+}
+
+.uploadS_txt{
+    position: absolute;
+    top: 5%;
+    left: 28.6%;
+    width: 42.81%;/*274px*/
+    z-index: 1;
+}
+
+.inputIntro_txt{
+    position: absolute;
+    top: 50%;
+    left: 12.74%;
+    width: 74.53%;/*477px*/
+    z-index: 1;
+}
+
+.nickName_txt{
+    position: absolute;
+    top: 60%;
+    left: 2.42%;
+    width: 95.15%;/*609px*/
+    z-index: 1;
+}
+
+.birthday_txt{
+    position: absolute;
+    top: 73%;
+    left: 2.42%;
+    width: 95.15%;/*609px*/
+    z-index: 1;
+}
+
+.input_frame{
+    position: absolute;
+    background-image:url("../img/input_frame.png");
+    top: 65%;
+    width: 83.9%;/*537px*/
+    padding-bottom: 9.31%;
+    left: 8.05%;
+}
+
+#input_id{
+    position:absolute;
+    border:0;
+    left: 4%;
+    top: 22.5%;
+    width: 92.5%;
+    height: 65%;
+    background-color: transparent;
+    color: #8B8B8B;
+    font-size: 0.9em;
+    text-align: center;
+    font-weight: 500;
+    z-index: 10012;
+}
+
+.testBtn{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    z-index: 1;
+}
+
+.testBtn_arrow{
+    position: absolute;
+    top: 36%;
+    right: 21%;
+    width: 4.53%;/*29px*/
+    z-index: 1;
+}
+
+.testEyeValue_txt{
+    position: absolute;
+    width: 46.56%;/*298px*/
+    left: 26.72%;
+    top: 33%;
+}
+
+/*eye_value_page*/
+.eyeValue_cicle{
+    position: absolute;
+    top: 28%;
+    left: 24%;
+    width: 51.09%;/*327px*/
+    z-index: 1;
+}
+
+.eyeValue_txt0{
+    position: absolute;
+    width: 67.34%;/*431px*/
+    top: 10%;
+    left: 16.33%;
+}
+
+.eyeValue_txt1{
+    position: absolute;
+    width: 49.68%; /*318px*/
+    top: 60%;
+    left: 25.17%;
+}
+
+.eyeValue_score{
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    height: 15%;
+}
+
+.eyeValue_score0{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    width: 20%;
+    text-align: right;
+    font-size: 6em;
+    font-weight: 600;
+    color: #fff;
+    -webkit-text-stroke: 1px #C11820;
+
+}
+
+
+.eyeValue_score1{
+    position: absolute;
+    top: 7%;
+    left: 53%;    
+    font-size: 4em;
+    font-weight: 800;
+    color: #fff;
+    -webkit-text-stroke: 1px #C11820;
+}
+
+.duelBtn{
+    position: absolute;
+    width: 100%;
+    bottom: 0%;
+}
+
+
+
+/*选择日期*/
+#form{
+    position: absolute;
+    top: 80%;
+    width: 90%;
+    height: 5%;
+    padding: 0% 5% 0% 7%;
+}
+
+#year, #month, #day{
+    width: 27.8%;
+}
+
+#form span{
+	color: #fff;
+}
+
+select{
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/select_bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-color:transparent;
+    border:0px;
+    padding-left: 5px;
+    margin-right: 1%;
+    left: 0%;
+    position: relative;
+    -webkit-appearance:none;
+}
