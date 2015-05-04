@@ -142,6 +142,7 @@
 	left:11.71875%;
 	position:absolute;
 	bottom:3%;
+	overflow: hidden;
 }
 #slide9 .my-rank-tit{
 	position:absolute;

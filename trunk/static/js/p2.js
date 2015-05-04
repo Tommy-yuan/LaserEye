@@ -13,6 +13,8 @@ $(function(){
 	$(".my-rank-face").height($(".my-rank-face").width());
 	$(".my-rank-face").css('border-radius',$(".my-rank-face").width()/2);
 	
+	$(".eyeValue_cicle").height($(".eyeValue_cicle").width());
+	$(".eyeValue_cicle").css('border-radius',$(".eyeValue_cicle").width()/2);
 
 	$('#input_id').on('focus', function() {
 		if ($(this).val() == '10个字以内(听说酷炫的昵称会让对手只看一眼就被吓晕呢)')
@@ -38,32 +40,35 @@ $(function(){
 	    {
 	      alert("请缩放图片充满边框");
 	      // showAlert("page4_alert");
-	      return;
+	      // return;
 	    }
-	    var target = document.getElementById('upload_photo');
-	    showProgress(target);
+	    else{
+	    	var target = document.getElementById('upload_photo');
+		    showProgress(target);
 
-	    base64String = base64String.split("base64,")[1];
-	    console.log(base64String);
-	    $.ajax({
-	    	url:'http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/RvEyeUploadAvatar.loreal',
-	    	type:'POST',
-	    	dataType:'json',
-	    	data:{
-	    		pictureBase64String:base64String
-	    	},
-	    	success:function(responseObj){
-	    		if (responseObj.success) 
-	    		{
-	    			setMyHeadImg(responseObj.url);
-	    			openId = responseObj.openId;
-	    			mySwiper.swipeTo(inputName);
-	    		}
-	    	},
-	    	error:function() {
-	    		alert("上传失败");
-	    	}
-	    });
+		    base64String = base64String.split("base64,")[1];
+		    console.log(base64String);
+		    $.ajax({
+		    	url:'http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/RvEyeUploadAvatar.loreal',
+		    	type:'POST',
+		    	dataType:'json',
+		    	data:{
+		    		pictureBase64String:base64String
+		    	},
+		    	success:function(responseObj){
+		    		if (responseObj.success) 
+		    		{
+		    			setMyHeadImg(responseObj.url);
+		    			openId = responseObj.openId;
+		    			mySwiper.swipeTo(inputName);
+		    		}
+		    	},
+		    	error:function() {
+		    		alert("上传失败");
+		    	}
+		    });
+	    }
+	    
 
 	});
 
@@ -119,7 +124,7 @@ $(function(){
 				data:{
 					openId:openId,
 					nickname:nickName,
-					birth:myBirthDay,
+					birth:(new Date(myBirthDay)),
 					startingScore:myScore
 				},
 				success:function(responseObj){

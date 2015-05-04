@@ -57,7 +57,7 @@ var uploadPhoto = function(e){
 								        imgRotation = 270;
 								        break;
 								}
-								imgEventInit(".upload_photo","#upload_img");
+								imgEventInit(".adjust_frame","#upload_img");
 								console.log("rotation = " + imgRotation);
 								 return e.target.result;
 			            }
@@ -65,7 +65,7 @@ var uploadPhoto = function(e){
 			        }
 			        else
 			        {
-			        	imgEventInit(".upload_photo","#upload_img");
+			        	imgEventInit(".adjust_frame","#upload_img");
 			        }
 			    }
 			    else

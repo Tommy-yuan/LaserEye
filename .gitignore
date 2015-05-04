@@ -6,3 +6,5 @@
 .svn/format
 
 .svn/wc.db
+
+*.zip
