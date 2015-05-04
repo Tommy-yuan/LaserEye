@@ -17,7 +17,7 @@ function loadimg(pics, progressCallBack, completeCallback) {
         img.src = pics[index];
         img.onload = function () {
             // 控制台显示加载图片信息
-            console.log('第' + index + '个img被预加载', img.src);
+            // console.log('第' + index + '个img被预加载', img.src);
             progressCallBack(Math.floor(((index + 1) / len) * 100) + "%");
             
             i = index;
