@@ -96,6 +96,7 @@ $(function() {
 	//分享成功后 重新挑战
 	$(".shareSuccess-again").click(function(){
 		initalPKAgain(myScore,oppScore);
+		searchOpponent();
 		
 	});
 
@@ -109,28 +110,34 @@ $(function() {
             alert('请输入正确的手机号');
         }
         else{
-        	submitClicked = true;
-        	$.ajax({
-        		url:"http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/RvEyeLotterySaveContact.loreal",
-        		type:'POST',
-        		dataType:'json',
-        		data:{
-        			openId:openId,
-        			mobile:phone,
-        			lotteryId:lotteryId,
-        			mobile:phone,
-        			userName:myName
-        		},
-        		success:function(responseObj){
-        			if (responseObj.errorMessage == 'success') 
-        			{	
-        				alert("提交成功");
-        			}
-        		},
-        		error:function(errorObj){
-        			alert("提交失败");
-        		}
-        	});
+        	if (!submitClicked) 
+        	{
+        		submitClicked = true;
+	        	var sendData = {
+	    			openId:openId,
+	    			mobile:phone,
+	    			lotteryId:lotteryId,
+	    			mobile:phone,
+	    			userName:myName
+	    		};
+	    		console.log(sendData);
+	        	$.ajax({
+	        		url:"http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/RvEyeLotterySaveContact.loreal",
+	        		type:'POST',
+	        		dataType:'json',
+	        		data:sendData,
+	        		success:function(responseObj){
+	        			console.log(responseObj);
+	        			if (responseObj.success == true) 
+	        			{	
+	        				alert("提交成功");
+	        			}
+	        		},
+	        		error:function(errorObj){
+	        			alert("提交失败");
+	        		}
+	        	});
+        	}
         }
 	});
 
@@ -155,6 +162,7 @@ $(function() {
 	//排行榜页重新挑战
 	$(".fight-again").click(function(){
 		initalPKAgain(myScore,oppScore);
+		searchOpponent();
 	});
 
 	var myCryAnimate,
@@ -230,7 +238,7 @@ $(function() {
 	        dataType:'json',
 	        data:{
 	          openId:openId,
-	          birth:myBirthDay,
+	          birth:(new Date(myBirthDay)),
 	          gameScore:endScore
 	        },
 	        success:function(responseObj){
@@ -248,7 +256,7 @@ $(function() {
 			        	console.log(responseObj);
 			          if (responseObj.success) 
 			          {
-			            var content = responseObj.message[0];
+			            var content = responseObj.message;
 			            $(".my-rank-num").html(content.Ranking);
 			            $(".my-rank-name").html(content.NickName);
 			            $(".my-rank-score").html(content.GameScore);
@@ -307,7 +315,7 @@ $(function() {
 	}
 
 	function initalPKAgain(score,oppScore){
-		mySwiper.swipeTo(pkPage);
+		// mySwiper.swipeTo(pkPage);
 		initalPK(score,oppScore);
 	}
 

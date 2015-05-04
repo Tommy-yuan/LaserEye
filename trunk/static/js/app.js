@@ -180,9 +180,8 @@ function shareMyScore(count){
     var finalScore = pkScore + 20;
     $(".shareSuccess-score").html(finalScore);
     checkPrize();
-
     $(".game-share").css('display','block');
-    // wx_share(count);
+    wx_share(count);
 
 }
 
@@ -196,7 +195,7 @@ function checkPrize(){
 
     var prize = false;
     $.ajax({
-        url:'http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/ RvEyeLottery.loreal', //是否中奖
+        url:'http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/RvEyeLottery.loreal', //是否中奖
         type:'POST',
         dataType:'json',
         data:{
@@ -258,6 +257,7 @@ function setMyInitScore(score){
     $(".my-rank-score").html(score);
     $(".pk-me-score").html(score);
     $("#pk-init-socre").html(score);
+    $(".eyeValue_score0").html(score);
     myScore = score;
 }
 
@@ -275,7 +275,7 @@ function searchOpponent(){
 
 function setMyHeadImg(img){
     myHeadimg = img;
-    $(".result-headimg").find('img').attr('src',img);
+    $(".result-me").find($(".result-headimg")).find('img').attr('src',img);
     $(".pk-me").find($(".pk-headimg")).find('img').attr('src',img);
     $(".my-rank-face").find('img').attr('src',img);
     $(".input_cicle").find('img').attr('src',img);

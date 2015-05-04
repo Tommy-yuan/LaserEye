@@ -18,6 +18,7 @@ function checkRank(){
         type:'POST',
         dataType:'json',
         success:function(responseObj){
+          console.log(responseObj);
             if (responseObj.success) 
             {
               rankArray = responseObj.message;

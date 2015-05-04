@@ -13,6 +13,8 @@ $(function(){
 	$(".my-rank-face").height($(".my-rank-face").width());
 	$(".my-rank-face").css('border-radius',$(".my-rank-face").width()/2);
 	
+	$(".eyeValue_cicle").height($(".eyeValue_cicle").width());
+	$(".eyeValue_cicle").css('border-radius',$(".eyeValue_cicle").width()/2);
 
 	$('#input_id').on('focus', function() {
 		if ($(this).val() == '10个字以内(听说酷炫的昵称会让对手只看一眼就被吓晕呢)')
@@ -119,7 +121,7 @@ $(function(){
 				data:{
 					openId:openId,
 					nickname:nickName,
-					birth:myBirthDay,
+					birth:(new Date(myBirthDay)),
 					startingScore:myScore
 				},
 				success:function(responseObj){
