@@ -40,32 +40,35 @@ $(function(){
 	    {
 	      alert("请缩放图片充满边框");
 	      // showAlert("page4_alert");
-	      return;
+	      // return;
 	    }
-	    var target = document.getElementById('upload_photo');
-	    showProgress(target);
+	    else{
+	    	var target = document.getElementById('upload_photo');
+		    showProgress(target);
 
-	    base64String = base64String.split("base64,")[1];
-	    console.log(base64String);
-	    $.ajax({
-	    	url:'http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/RvEyeUploadAvatar.loreal',
-	    	type:'POST',
-	    	dataType:'json',
-	    	data:{
-	    		pictureBase64String:base64String
-	    	},
-	    	success:function(responseObj){
-	    		if (responseObj.success) 
-	    		{
-	    			setMyHeadImg(responseObj.url);
-	    			openId = responseObj.openId;
-	    			mySwiper.swipeTo(inputName);
-	    		}
-	    	},
-	    	error:function() {
-	    		alert("上传失败");
-	    	}
-	    });
+		    base64String = base64String.split("base64,")[1];
+		    console.log(base64String);
+		    $.ajax({
+		    	url:'http://mobilecampaign.lorealparis.com.cn/Interface/ApiForCampaign/RvEyeUploadAvatar.loreal',
+		    	type:'POST',
+		    	dataType:'json',
+		    	data:{
+		    		pictureBase64String:base64String
+		    	},
+		    	success:function(responseObj){
+		    		if (responseObj.success) 
+		    		{
+		    			setMyHeadImg(responseObj.url);
+		    			openId = responseObj.openId;
+		    			mySwiper.swipeTo(inputName);
+		    		}
+		    	},
+		    	error:function() {
+		    		alert("上传失败");
+		    	}
+		    });
+	    }
+	    
 
 	});
 
