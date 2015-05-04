@@ -90,6 +90,13 @@ $(function(){
         }
     });
 
+    for (var i = 0;i<pk_content.length;i++)
+    {
+        var img = pk_content[i]['dialog'];
+        pics.push(img+'0.png');
+        pics.push(img+'1.png');
+    }
+
 
 
     loadimg(pics,function(p){
