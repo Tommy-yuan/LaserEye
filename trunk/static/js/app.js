@@ -100,7 +100,7 @@ $(function(){
 
 
     loadimg(pics,function(p){
-        console.log("pics:"+pics);
+        // console.log("pics:"+pics);
         var per = parseInt(w);
         //console.log(per);
         $(".load-count").html(p);
