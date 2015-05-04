@@ -17,8 +17,8 @@ function loadimg(pics, progressCallBack, completeCallback) {
         img.src = pics[index];
         img.onload = function () {
             // 控制台显示加载图片信息
-            // console.log('第' + index + '个img被预加载', img.src);
-            progressCallBack(Math.floor(((index + 1) / len) * 100));
+            console.log('第' + index + '个img被预加载', img.src);
+            progressCallBack(Math.floor(((index + 1) / len) * 100) + "%");
             
             i = index;
             index++;
@@ -78,13 +78,37 @@ $(function(){
 		}        
 	});
 	
-   document.onreadystatechange = function () {
-	   if(document.readyState=="complete"){
-		   mySwiper.swipeTo(1);
-           // searchOpponent();
-           // checkRank();
-	   }
-   }
+    var pics = Array();
+  
+    $(document).find("div").each(function(e){
+        
+        if ($(this).css('background-image') != 'none') 
+        {
+            var url = $(this).css('background-image'),
+                pic = url.substring(4,url.length-1);
+            pics.push(pic + "?" + e);
+        }
+    });
+
+
+
+    loadimg(pics,function(p){
+        console.log("pics:"+pics);
+        var per = parseInt(w);
+        //console.log(per);
+        $(".load-count").html(p);
+    },function(){
+        //poster初始化
+      mySwiper.swipeTo(1)
+
+    });
+   // document.onreadystatechange = function () {
+	  //  if(document.readyState=="complete"){
+		 //   // mySwiper.swipeTo(1);
+   //         // searchOpponent();
+   //         // checkRank();
+	  //  }
+   // }
 
    
 });
